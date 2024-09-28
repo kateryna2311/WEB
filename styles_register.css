@@ -40,11 +40,12 @@ h2 {
 
 form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto; /* Додаємо відступ зверху і знизу */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Додаємо box-sizing для врахування відступів */
 }
 
 label {
@@ -57,12 +58,19 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-input[type="file"] {
-    width: 100%;
+input[type="file"],
+textarea,
+select {
+    width: calc(100% - 20px); /* Віднімемо від ширини поля відступи */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box; /* Додаємо box-sizing для врахування відступів */
+}
+
+textarea {
+    resize: vertical; /* Можливість змінювати висоту */
 }
 
 input[type="checkbox"] {
@@ -88,6 +96,7 @@ button {
     margin-top: 15px;
     display: block;
     width: 100%;
+    box-sizing: border-box; /* Додаємо box-sizing для врахування відступів */
 }
 
 button:hover {
@@ -100,34 +109,6 @@ footer {
     text-align: center;
     padding: 10px 20px;
     margin-top: 20px;
-}
-
-/* Мобільні стилі */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 24px; /* Зменшуємо розмір заголовка на мобільних */
-    }
-
-    nav li {
-        margin: 0 10px; /* Зменшуємо відстань між пунктами меню */
-    }
-
-    input[type="text"],
-    input[type="password"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="file"],
-    button {
-        font-size: 14px; /* Зменшуємо розмір шрифту для полів */
-    }
-
-    button {
-        padding: 10px; /* Зменшуємо відступи кнопок */
-    }
-
-    form {
-        padding: 15px; /* Зменшуємо відступи у формі */
-    }
 }
 
 /* Мобільні стилі */
@@ -153,6 +134,7 @@ footer {
     button {
         font-size: 14px; /* Зменшуємо розмір шрифту для полів */
         padding: 8px; /* Зменшуємо відступи у полях */
+        box-sizing: border-box; /* Додаємо box-sizing для врахування відступів */
     }
 
     button {
