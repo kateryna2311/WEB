@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #9bd5b6;
+}
+
+header {
+    background-color: #3a5744;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 30px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    color: #3a5744;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+button {
+    background-color: #3a5744;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2a3e34;
+}
+
+footer {
+    background-color: #3a5744;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/* Мобільні стилі */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px; /* Зменшуємо розмір заголовка на мобільних */
+    }
+
+    nav li {
+        margin: 0 10px; /* Зменшуємо відстань між пунктами меню */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="file"],
+    button {
+        font-size: 14px; /* Зменшуємо розмір шрифту для полів */
+    }
+
+    button {
+        padding: 10px; /* Зменшуємо відступи кнопок */
+    }
+
+    form {
+        padding: 15px; /* Зменшуємо відступи у формі */
+    }
+}
+
+/* Мобільні стилі */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px; /* Зменшуємо розмір заголовка на мобільних */
+    }
+
+    nav li {
+        margin: 0 10px; /* Зменшуємо відстань між пунктами меню */
+    }
+
+    form {
+        padding: 15px; /* Зменшуємо відступи у формі */
+        margin: 10px; /* Додаємо невеликий відступ для мобільних */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="file"],
+    button {
+        font-size: 14px; /* Зменшуємо розмір шрифту для полів */
+        padding: 8px; /* Зменшуємо відступи у полях */
+    }
+
+    button {
+        padding: 10px; /* Зменшуємо відступи кнопок */
+    }
+
+    label {
+        margin: 10px 0 5px; /* Зменшуємо відстань для лейблів */
+    }
+}
